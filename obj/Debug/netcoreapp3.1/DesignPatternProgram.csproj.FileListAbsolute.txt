@@ -9,3 +9,6 @@ C:\Users\User\source\repos\DesignPatternProgram\DesignPatternProgram\obj\Debug\n
 C:\Users\User\source\repos\DesignPatternProgram\DesignPatternProgram\obj\Debug\netcoreapp3.1\DesignPatternProgram.dll
 C:\Users\User\source\repos\DesignPatternProgram\DesignPatternProgram\obj\Debug\netcoreapp3.1\DesignPatternProgram.pdb
 C:\Users\User\source\repos\DesignPatternProgram\DesignPatternProgram\obj\Debug\netcoreapp3.1\DesignPatternProgram.csprojAssemblyReference.cache
+C:\Users\User\source\repos\DesignPatternProgram\DesignPatternProgram\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\User\source\repos\DesignPatternProgram\DesignPatternProgram\obj\Debug\netcoreapp3.1\DesignPatternProgram.csproj.CopyComplete
+C:\Users\User\source\repos\DesignPatternProgram\DesignPatternProgram\bin\Debug\netcoreapp3.1\ConsoleTables.dll
