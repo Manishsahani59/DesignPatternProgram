@@ -39,7 +39,8 @@ namespace DesignPatternProgram.StructuralDesignPattern.FacadeAddressBookProblem
 
         public string Zip()
         {
-            throw new NotImplementedException();
+            _zip = utility.Zipvalidation();
+            return _zip;
         }
     }
 }

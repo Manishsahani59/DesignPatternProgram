@@ -3,9 +3,16 @@ using System.Collections.Generic;
 using DesignPatternProgram.FactoryDesignPattern;
 using DesignPatternProgram.ProtoTypeDesignPattern;
 using DesignPatternProgram.StructuralDesignPattern.AdapterDesignPattern;
-using System.Text.RegularExpressions;
 using DesignPatternProgram.StructuralDesignPattern.FacadeDesignPattern;
 using DesignPatternProgram.StructuralDesignPattern.FacadeAddressBookProblem;
+using DesignPatternProgram.Behaviral_DesignPattern.ObserverDesignPattern;
+using DesignPatternProgram.Behaviral_DesignPattern.MeaditerDesignPattern;
+using DesignPatternProgram.StructuralDesignPattern.ProxyDesignPattern;
+using DesignPatternProgram.Behaviral_DesignPattern.VisitorDesignPattern;
+
+
+
+
 
 namespace DesignPatternProgram.FactoryDesignPattern
 {
@@ -27,6 +34,10 @@ namespace DesignPatternProgram.FactoryDesignPattern
                     Console.WriteLine("3 Structural Design Pattern // Adapter Design Pattern");
                     Console.WriteLine("4 Facade Design Pattern");
                     Console.WriteLine("5 Address Book");
+                    Console.WriteLine("6 Proxy Design Pattern");
+                    Console.WriteLine("7 Observer Design pattern");
+                    Console.WriteLine("8 Meaditor Design Pattern");
+                    Console.WriteLine("9 Visitor Design patten");
                     Console.WriteLine("_________________________________________________________________________________");
                     Console.WriteLine("Enter Your Choice ?...");
                     Console.WriteLine();
@@ -38,6 +49,7 @@ namespace DesignPatternProgram.FactoryDesignPattern
                             Computer PC = ComputerFactory.getComputer("PC", "5GB", "1000GB", "2.5GHz");
                             Console.WriteLine("Factory Type Server " + Server);
                             Console.WriteLine("Factory Type PC " + PC);
+                           
                             break;
                         case 2:
                             PrototypeDesignPattren prototype = PrototypeDesignPattren.GetInstance;
@@ -55,7 +67,22 @@ namespace DesignPatternProgram.FactoryDesignPattern
                             FacadeAddressBook AddreddBook = FacadeAddressBook.GetFacadeAddressBook;
                             AddreddBook.FacadeAddressBookPattern();
                             break;
-
+                        case 6:
+                            OfficeInterNetAccess ProxyDP = new ProxyInternetaccess("Ashwani Rajput");
+                            ProxyDP.GrantInterNetAccess();
+                            break;
+                        case 7:
+                            ObserverDesignPatternTest observer = new ObserverDesignPatternTest();
+                            observer.ObserverDesigntest();
+                            break;
+                        case 8:
+                            ChatmeaditoDemo demo = new ChatmeaditoDemo();
+                            demo.chatMedaitordemo();
+                            break;
+                        case 9:
+                            ShoppingCartClient VisitorDPDemo = new ShoppingCartClient();
+                            VisitorDPDemo.VisitorPattern();
+                            break;
                         default:
                             Console.WriteLine("You Entered The Wrong Option");
                             break;
@@ -65,6 +92,7 @@ namespace DesignPatternProgram.FactoryDesignPattern
                 {
                     Console.WriteLine(e.Message);
                 }
+                
                 Console.WriteLine("Do You Want to Continue Y/N");
                 input = Utility.CharValidation();
             } while (input.Equals('y') || input.Equals('Y'));
