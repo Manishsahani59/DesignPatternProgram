@@ -20,17 +20,17 @@ namespace DesignPatternProgram.FactoryDesignPattern
 
         public override string getHDD()
         {
-            return this.HDD = HDD;
+            return this.HDD;
         }
 
         public override string getRam()
         {
-            return this.Ram = Ram;
+            return this.Ram;
         }
 
         public override string getRom()
         {
-           return this.Rom = Rom;
+           return this.Rom;
         }
     }
 }

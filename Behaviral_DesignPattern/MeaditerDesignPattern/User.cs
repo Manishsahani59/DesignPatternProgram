@@ -8,7 +8,6 @@ namespace DesignPatternProgram.Behaviral_DesignPattern.MeaditerDesignPattern
 	{
 		protected ChatMeaditor mediator;
 		protected String name;
-
 		public User(ChatMeaditor med, String name)
 		{
 			this.mediator = med;
