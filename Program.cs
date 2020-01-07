@@ -9,6 +9,9 @@ using DesignPatternProgram.Behaviral_DesignPattern.ObserverDesignPattern;
 using DesignPatternProgram.Behaviral_DesignPattern.MeaditerDesignPattern;
 using DesignPatternProgram.StructuralDesignPattern.ProxyDesignPattern;
 using DesignPatternProgram.Behaviral_DesignPattern.VisitorDesignPattern;
+using DesignPatternProgram.SingletonDesignPattern;
+
+
 
 
 
@@ -38,6 +41,7 @@ namespace DesignPatternProgram.FactoryDesignPattern
                     Console.WriteLine("7 Observer Design pattern");
                     Console.WriteLine("8 Meaditor Design Pattern");
                     Console.WriteLine("9 Visitor Design patten");
+                    Console.WriteLine("10 Singleton Design Pattern");
                     Console.WriteLine("_________________________________________________________________________________");
                     Console.WriteLine("Enter Your Choice ?...");
                     Console.WriteLine();
@@ -82,6 +86,10 @@ namespace DesignPatternProgram.FactoryDesignPattern
                         case 9:
                             ShoppingCartClient VisitorDPDemo = new ShoppingCartClient();
                             VisitorDPDemo.VisitorPattern();
+                            break;
+                        case 10:
+                            SingletonDesignpattern singleton = new SingletonDesignpattern();
+                            singleton.SingleTonDesignPattern();
                             break;
                         default:
                             Console.WriteLine("You Entered The Wrong Option");
